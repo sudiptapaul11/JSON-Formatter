@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    background: #5652525f;
+}
+
+.heading{
+    display: flex;    
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20%;
+    align-items: center;
+    height: 90vh;
+    box-sizing: border-box;
+    padding-top: 2%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 7%;
+    gap: 7%;
+}
+
+.large-area{
+    height: 100%;
+    border-radius: 2%;
+}
+
+#inputArea1, #lineNumber {
+    font-family: lucida console, courier new, courier, monospace;
+    margin: 0;
+    padding: 10px 0;
+    height: 75vh;
+    border-radius: 0;
+    resize: none;
+    font-size: 16px;
+    line-height: 1.2;
+    outline: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#lineNumber:focus-visible,
+#inputArea1:focus-visible {
+    outline:none;
+}
+
+#lineNumber {
+    display: flex;
+    border-color: transparent;
+    overflow-y: hidden;
+    text-align: right;
+    box-shadow: none;
+    color: #707070;
+    background-color: #d8d8d8;
+    position: absolute;
+    width: 2.5rem;
+    /* Determine appearance of line counter */
+    background-color:#3E3D32;
+    border-color:#3E3D32;
+    color:#928869;
+}
+
+#inputArea1 {
+    padding-left: calc(3.5rem + 5px);
+    width:100%;
+    background-color:#272822;
+    border-color:#272822;
+    color:#ffffff;
+}
+
+#inputArea2, #lineNumber2 {
+    font-family: lucida console, courier new, courier, monospace;
+    margin: 0;
+    padding: 10px 0;
+    height: 75vh;
+    border-radius: 0;
+    resize: none;
+    font-size: 16px;
+    line-height: 1.2;
+    outline: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#lineNumber2:focus-visible,
+#inputArea2:focus-visible {
+    outline:none;
+}
+
+#lineNumber2 {
+    display: flex;
+    border-color: transparent;
+    overflow-y: hidden;
+    text-align: right;
+    box-shadow: none;
+    color: #707070;
+    background-color: #d8d8d8;
+    position: absolute;
+    width: 2.5rem;
+    /* Determine appearance of line counter */
+    background-color:#3E3D32;
+    border-color:#3E3D32;
+    color:#928869;
+}
+
+#inputArea2 {
+    padding-left: calc(3.5rem + 5px);
+    width:100%;
+    background-color:#272822;
+    border-color:#272822;
+    color:#ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.controls{
+    display: flex;    
+    justify-content: right;
+    padding-right: 7%;
+}
+
+button.control-button--cleartext {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.control-button--format {
+    align-items: center;
+    background-color: #FFE7E7;
+    background-position: 0 0;
+    border: 1px solid #FEE0E0;
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: #D33A2C;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 33.4929px;
+    list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+    padding: 2px 12px;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: none;
+    text-underline-offset: 1px;
+    transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
+  }
+  
+  .control-button--format:active,
+  .control-button--format:hover,
+  .control-button--format:focus {
+    outline: 0;
+  }
+  
+  
+  .control-button--format:active {
+    background-color: #D33A2C;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #e77b7b;
+  }
+  
+  .control-button--format:hover {
+    background-color: #e7a3a3;
+    border-color: #FAA4A4;
+  }
+  
+  .control-button--format:active:hover,
+  .control-button--format:focus:hover,
+  .control-button--format:focus {
+    background-color: #D33A2C;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+    border: 200px;
+  }
+
+
+  .control-button--cleartext{
+    align-items: center;
+    background-color: #B9E1C4;
+    background-position: 0 0;
+    border: 1px solid #C6EFD2;
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: #44af61;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 33.4929px;
+    list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+    padding: 2px 12px;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: none;
+    text-underline-offset: 1px;
+    transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
+  }
+  
+  .control-button--cleartext:active,
+  .control-button--cleartext:hover,
+  .control-button--cleartext:focus {
+    outline: 0;
+  }
+  
+  
+  .control-button--cleartext:active {
+    background-color: #135324;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+  }
+  
+  .control-button--cleartext:hover {
+    background-color: #88EEA4;
+    border-color: #43955A;
+  }
+  
+  .control-button--cleartext:active:hover,
+  .control-button--cleartext:focus:hover,
+  .control-button--cleartext:focus {
+    background-color: #4CDB74;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #88EEA4;
+    border: 200px;
+  }
